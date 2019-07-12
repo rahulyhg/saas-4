@@ -1,214 +1,208 @@
-<div class="container">
-  <form [formGroup]="registerForm">
-    <!-- INICIO FORMULARIO -->
-    <div class="form-row">
-      <div class="col-md-2 col-sm-12">
-        <div class="col-md-2 col-sm-12" style="margin-top: 5%">
-          <img src="https://abrilexame.files.wordpress.com/2018/10/capaprofile.jpg" alt="Smiley face" height="150"
-            width="150">
-        </div>
+<form [formGroup]="registerForm">
+  <!-- INICIO FORMULARIO -->
+  <div class="form-row">
+    <div class="col-md-2 col-sm-12">
+      <div class="col-md-2 col-sm-12" style="margin-top: 5%">
+        <img src="https://abrilexame.files.wordpress.com/2018/10/capaprofile.jpg" alt="Smiley face" height="100"
+          width="100">
       </div>
-      <div class="col-md-10 col-sm-12">
-        <div class="form-row">
-          <div class="col-md-6 col-sm-12">
-            <div class="form-group">
-              <label for="full-name">Nome</label>
-              <input type="text" class="form-control">
-            </div>
+    </div>
+    <div class="col-md-10 col-sm-12">
+      <div class="form-row">
+        <div class="col-md-6 col-sm-12">
+          <div class="form-group">
+            <label for="full-name">Nome</label>
+            <input type="text" class="form-control">
           </div>
-          <div class="col-md-6 col-sm-12">
-            <div class="form-group">
-              <label for="nome-abreviado">Nome Abreviado</label>
-              <input type="text" class="form-control">
-            </div>
+        </div>
+        <div class="col-md-6 col-sm-12">
+          <div class="form-group">
+            <label for="nome-abreviado">Nome Abreviado</label>
+            <input type="text" class="form-control">
           </div>
-          <div class="col-md-3 col-sm-12">
-            <div class="form-group">
-              <label for="data-nascimento">Data de Nascimento</label>
-              <input type="data" class="form-control" bsDatepicker>
-            </div>
+        </div>
+        <div class="col-md-3 col-sm-12">
+          <div class="form-group">
+            <label for="data-nascimento">Data de Nascimento</label>
+            <input type="data" class="form-control" bsDatepicker>
           </div>
-          <div class="col-md-3 col-sm-12">
-            <div class="form-group">
-              <label for="cpf">CPF</label>
-              <input type="text" class="form-control">
-            </div>
+        </div>
+        <div class="col-md-3 col-sm-12">
+          <div class="form-group">
+            <label for="cpf">CPF</label>
+            <input type="text" class="form-control">
           </div>
-          <div class="col-md-6 col-sm-12">
-            <div class="form-group">
-              <label for="celular">Celular</label>
-              <input type="text" class="form-control">
-            </div>
+        </div>
+        <div class="col-md-6 col-sm-12">
+          <div class="form-group">
+            <label for="celular">Celular</label>
+            <input type="text" class="form-control">
           </div>
         </div>
       </div>
     </div>
+  </div>
 
-    <!-- MEIO DO FORMULARIO -->
-    <!-- LINHA 1 -->
-    <div class="form-row">
-      <div class="col-md-3 col-sm-12">
-        <div class="form-group">
-          <label for="telefone">Telefone</label>
-          <input type="text" id="telefone" class="form-control">
-        </div>
-      </div>
-      <div class="col-md-6 col-sm-12">
-        <div class="form-group">
-          <label for="email">E-mail</label>
-          <input type="text" id="email" class="form-control">
-        </div>
-      </div>
-      <div class="col-md-3 col-sm-12">
-        <div class="form-group">
-          <label for="sexo">Sexo</label>
-          <select id="sexo" class="form-control">
-            <option value="">Selecione</option>
-          </select>
-        </div>
+  <!-- MEIO DO FORMULARIO -->
+  <!-- LINHA 1 -->
+  <div class="form-row">
+    <div class="col-md-3 col-sm-12">
+      <div class="form-group">
+        <label for="telefone">Telefone</label>
+        <input type="text" id="telefone" class="form-control">
       </div>
     </div>
-
-    <!-- LINHA 2 -->
-    <div class="form-row">
-      <div class="col-md-3 col-sm-12">
-        <div class="form-group">
-          <label for="estado-civil">Estado Civil</label>
-          <select id="estado-civil" class="form-control">
-            <option value="">Selecione</option>
-          </select>
-        </div>
-      </div>
-      <div class="col-md-3 col-sm-12">
-        <div class="form-group">
-          <label for="rg">RG</label>
-          <input type="text" id="rg" class="form-control">
-        </div>
-      </div>
-      <div class="col-md-3 col-sm-12">
-        <div class="form-group">
-          <label for="emissor">Emissor</label>
-          <input type="text" id="emissor" class="form-control">
-        </div>
-      </div>
-      <div class="col-md-3 col-sm-12">
-        <div class="form-group">
-          <label for="data-emissao">Date de Emissão</label>
-          <input type="text" class="form-control" bsDatepicker>
-        </div>
+    <div class="col-md-6 col-sm-12">
+      <div class="form-group">
+        <label for="email">E-mail</label>
+        <input type="text" id="email" class="form-control">
       </div>
     </div>
-
-    <!-- LINHA 3 -->
-    <div class="form-row">
-      <div class="col-md-3 col-sm-12">
-        <div class="form-group">
-          <label for="ctps">CTPS</label>
-          <input type="text" class="form-control">
-        </div>
-      </div>
-      <div class="col-md-3 col-sm-12">
-        <div class="form-group">
-          <label for="pis">PIS</label>
-          <input type="text" id="pis" class="form-control">
-        </div>
-      </div>
-      <div class="col-md-3 col-sm-12">
-        <div class="form-group">
-          <label for="cartao-vt">Tipo do Cartao VT</label>
-          <select id="cartao-vt" class="form-control">
-            <option value="">Selecione</option>
-          </select>
-        </div>
-      </div>
-      <div class="col-md-3 col-sm-12">
-        <div class="form-group">
-          <label for="numero-cartao-vt">Número do Cartão VT</label>
-          <input type="text" id="numero-cartao-vt" class="form-control">
-        </div>
+    <div class="col-md-3 col-sm-12">
+      <div class="form-group">
+        <label for="sexo">Sexo</label>
+        <select id="sexo" class="form-control">
+          <option value="">Selecione</option>
+        </select>
       </div>
     </div>
+  </div>
 
-    <!-- LINHA 4 -->
-    <div class="form-row" formGroupName="address">
-      <div class="col-md-3 col-sm-10">
-        <div class="form-group">
-          <label for="cep">CEP</label>
-          <input type="text" class="form-control" formControlName="zipCode" [textMask]="{mask: MASKS.cep.textMask}">
-        </div>
-      </div>
-      <div class="col-md-2 col-sm-2">
-        <div class="form-group">
-          <button class="btn btn-prmary" (click)="getByCep(this.registerForm.controls.address.controls.zipCode.value)"
-            style="margin-top: 18%">
-            Pesquisar
-          </button>
-        </div>
-
+  <!-- LINHA 2 -->
+  <div class="form-row">
+    <div class="col-md-3 col-sm-12">
+      <div class="form-group">
+        <label for="estado-civil">Estado Civil</label>
+        <select id="estado-civil" class="form-control">
+          <option value="">Selecione</option>
+        </select>
       </div>
     </div>
-
-    <!-- LINHA 5 -->
-    <div class="form-row" formGroupName="address">
-      <div class="col-md-4 col-sm-12">
-        <div class="form-group">
-          <label for="logradouro">Logradouro</label>
-          <input type="text" id="logradouro" class="form-control" formControlName="street">
-        </div>
-      </div>
-      <div class="col-md-2 col-sm-12">
-        <div class="form-group">
-          <label for="numero">Número</label>
-          <input type="text" id="numero" class="form-control" formControlName="number">
-        </div>
-      </div>
-      <div class="col-md-6 col-sm-12">
-        <div class="form-group">
-          <label for="complemento">Complemento</label>
-          <input type="text" id="complemento" class="form-control" formControlName="complement">
-        </div>
+    <div class="col-md-3 col-sm-12">
+      <div class="form-group">
+        <label for="rg">RG</label>
+        <input type="text" id="rg" class="form-control">
       </div>
     </div>
-
-    <!-- LINHA 6 -->
-    <div class="form-row" formGroupName="address">
-      <div class="col-md-6 col-sm-12">
-        <div class="form-group">
-          <label for="bairro">Bairro</label>
-          <input type="text" id="bairro" class="form-control" formControlName="district">
-        </div>
-      </div>
-      <div class="col-md-2 col-sm-12">
-        <div class="form-group">
-          <label for="estado">UF</label>
-          <select id="estado" class="form-control" formControlName="stateCode" (ngModelChange)="getMunicipios($event)">
-            <option [ngValue]="null" [defaultSelected]="true">Selecione</option>
-            <option *ngFor="let uf of ufs" [ngValue]="uf.sigla">{{uf.sigla}}</option>
-          </select>
-        </div>
-      </div>
-      <div class="col-md-4 col-sm-12">
-        <div class="form-group">
-          <label for="cidade">Cidade</label>
-          <select id="cidade" class="form-control" formControlName="city">
-            <option [ngValue]="null" [defaultSelected]="true">Selecione</option>
-            <option *ngFor="let mu of municipios" [ngValue]="mu.nome">{{mu.nome}}</option>
-          </select>
-        </div>
+    <div class="col-md-3 col-sm-12">
+      <div class="form-group">
+        <label for="emissor">Emissor</label>
+        <input type="text" id="emissor" class="form-control">
       </div>
     </div>
+    <div class="col-md-3 col-sm-12">
+      <div class="form-group">
+        <label for="data-emissao">Date de Emissão</label>
+        <input type="text" class="form-control" bsDatepicker>
+      </div>
+    </div>
+  </div>
 
-    <div class="form-row">
-      <div class="col-12">
-        <button class="btn btn-success float-right">
-          Salvar
+  <!-- LINHA 3 -->
+  <div class="form-row">
+    <div class="col-md-3 col-sm-12">
+      <div class="form-group">
+        <label for="ctps">CTPS</label>
+        <input type="text" class="form-control">
+      </div>
+    </div>
+    <div class="col-md-3 col-sm-12">
+      <div class="form-group">
+        <label for="pis">PIS</label>
+        <input type="text" id="pis" class="form-control">
+      </div>
+    </div>
+    <div class="col-md-3 col-sm-12">
+      <div class="form-group">
+        <label for="cartao-vt">Tipo do Cartao VT</label>
+        <select id="cartao-vt" class="form-control">
+          <option value="">Selecione</option>
+        </select>
+      </div>
+    </div>
+    <div class="col-md-3 col-sm-12">
+      <div class="form-group">
+        <label for="numero-cartao-vt">Número do Cartão VT</label>
+        <input type="text" id="numero-cartao-vt" class="form-control">
+      </div>
+    </div>
+  </div>
+
+  <!-- LINHA 4 -->
+  <div class="form-row" formGroupName="address">
+    <div class="col-md-3 col-sm-10">
+      <div class="form-group">
+        <label for="cep">CEP</label>
+        <input type="text" class="form-control" formControlName="zipCode" [textMask]="{mask: MASKS.cep.textMask}">
+      </div>
+    </div>
+    <div class="col-md-2 col-sm-2">
+      <div class="form-group">
+        <button class="btn btn-prmary" (click)="getByCep(this.registerForm.controls.address.controls.zipCode.value)"
+          style="margin-top: 18%">
+          Pesquisar
         </button>
       </div>
+
     </div>
+  </div>
 
-  </form>
-</div>
+  <!-- LINHA 5 -->
+  <div class="form-row" formGroupName="address">
+    <div class="col-md-4 col-sm-12">
+      <div class="form-group">
+        <label for="logradouro">Logradouro</label>
+        <input type="text" id="logradouro" class="form-control" formControlName="street">
+      </div>
+    </div>
+    <div class="col-md-2 col-sm-12">
+      <div class="form-group">
+        <label for="numero">Número</label>
+        <input type="text" id="numero" class="form-control" formControlName="number">
+      </div>
+    </div>
+    <div class="col-md-6 col-sm-12">
+      <div class="form-group">
+        <label for="complemento">Complemento</label>
+        <input type="text" id="complemento" class="form-control" formControlName="complement">
+      </div>
+    </div>
+  </div>
 
-<pre>
-  {{registerForm.value | json}}
-</pre>
+  <!-- LINHA 6 -->
+  <div class="form-row" formGroupName="address">
+    <div class="col-md-6 col-sm-12">
+      <div class="form-group">
+        <label for="bairro">Bairro</label>
+        <input type="text" id="bairro" class="form-control" formControlName="district">
+      </div>
+    </div>
+    <div class="col-md-2 col-sm-12">
+      <div class="form-group">
+        <label for="estado">UF</label>
+        <select id="estado" class="form-control" formControlName="stateCode" (ngModelChange)="getMunicipios($event)">
+          <option [ngValue]="null" [defaultSelected]="true">Selecione</option>
+          <option *ngFor="let uf of ufs" [ngValue]="uf.sigla">{{uf.sigla}}</option>
+        </select>
+      </div>
+    </div>
+    <div class="col-md-4 col-sm-12">
+      <div class="form-group">
+        <label for="cidade">Cidade</label>
+        <select id="cidade" class="form-control" formControlName="city">
+          <option [ngValue]="null" [defaultSelected]="true">Selecione</option>
+          <option *ngFor="let mu of municipios" [ngValue]="mu.nome">{{mu.nome}}</option>
+        </select>
+      </div>
+    </div>
+  </div>
+
+  <div class="form-row">
+    <div class="col-12">
+      <button class="btn btn-success float-right">
+        Salvar
+      </button>
+    </div>
+  </div>
+
+</form>

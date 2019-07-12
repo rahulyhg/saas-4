@@ -16,7 +16,7 @@ import { DadosPessoaisComponent } from './shared/components/dados-pessoais/dados
 import { ContratoComponent } from './shared/components/contrato/contrato.component';
 import { ViacepService } from './shared/services/viacep.service';
 import { IbgeService } from './shared/services/ibge.service';
-
+import { MatCardModule } from '@angular/material/card';
 @NgModule({
   declarations: [ColaboradorListComponent, ColaboradorFormComponent, DadosPessoaisComponent, ContratoComponent],
   imports: [
@@ -27,6 +27,7 @@ import { IbgeService } from './shared/services/ibge.service';
     TabsModule.forRoot(),
     BsDatepickerModule.forRoot(),
     TextMaskModule,
+    MatCardModule,
     NgBrazil
   ], providers: [
     ViacepService,

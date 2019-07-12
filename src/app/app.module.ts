@@ -6,8 +6,10 @@ import { CoreModule } from './core/core.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { SideNavComponent } from './core/side-nav/side-nav.component';
 import { LayoutModule } from '@angular/cdk/layout';
-import { MatToolbarModule, MatButtonModule, MatSidenavModule, MatIconModule, MatListModule } from '@angular/material';
-import { from } from 'rxjs';
+import {
+  MatToolbarModule, MatButtonModule, MatSidenavModule,
+  MatIconModule, MatListModule
+} from '@angular/material';
 @NgModule({
   declarations: [
     AppComponent, SideNavComponent
@@ -16,7 +18,8 @@ import { from } from 'rxjs';
     CoreModule,
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule, LayoutModule,
+    BrowserAnimationsModule,
+    LayoutModule,
     MatToolbarModule,
     MatButtonModule,
     MatSidenavModule,
