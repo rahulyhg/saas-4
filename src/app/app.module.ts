@@ -3,15 +3,25 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CoreModule } from './core/core.module';
-
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { SideNavComponent } from './core/side-nav/side-nav.component';
+import { LayoutModule } from '@angular/cdk/layout';
+import { MatToolbarModule, MatButtonModule, MatSidenavModule, MatIconModule, MatListModule } from '@angular/material';
+import { from } from 'rxjs';
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent, SideNavComponent
   ],
   imports: [
     CoreModule,
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule, LayoutModule,
+    MatToolbarModule,
+    MatButtonModule,
+    MatSidenavModule,
+    MatIconModule,
+    MatListModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

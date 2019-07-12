@@ -1,0 +1,23 @@
+.btn.btn-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    height: 3rem;
+    width: 3rem;
+    margin-top: 25px
+}
+
+.btn.btn-icon.btn-circle {
+    border-radius: 50%;
+}
+
+.btn.btn-icon i {
+    padding: 0;
+    margin: 0;
+    line-height: 0;
+}
+
+.btn.btn-elevate {
+    transition: all .3s ease 0s;
+}
