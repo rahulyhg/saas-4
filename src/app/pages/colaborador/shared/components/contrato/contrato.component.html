@@ -1,3 +1,83 @@
-<p>
-  contrato works!
-</p>
+<form>
+
+  <!-- PRIMEIRA LINHA -->
+  <div class="form-row">
+    <div class="col-sm-12 col-md-6">
+      <div class="form-group">
+        <label for="modalidade">Modalidade</label>
+        <select id="modalidade" class="form-control">
+          <option [ngValue]="">Selectione</option>
+        </select>
+      </div>
+    </div>
+    <div class="col-sm-12 col-md-6">
+      <div class="form-group">
+        <label for="funcao">Função</label>
+        <select id="funcao" class="form-control">
+          <option [ngValue]="">Selectione</option>
+        </select>
+      </div>
+    </div>
+  </div>
+
+  <!-- SEGUNDA LINHA -->
+  <div class="form-row">
+    <div class="col-sm-12 col-md-6">
+      <div class="form-group">
+        <label for="data-inicial">Data Inicial</label>
+        <input type="datetime" id="data-inicial" class="form-control">
+      </div>
+    </div>
+    <div class="col-sm-12 col-md-6">
+      <div class="form-group">
+        <label for="data-final">Data Final</label>
+        <input type="datetime" id="data-final" class="form-control">
+      </div>
+    </div>
+  </div>
+
+  <!-- TERCEIRA LINHA -->
+  <div class="form-row">
+    <div class="col-sm-12 col-md-6">
+      <div class="form-group">
+        <label for="data-dia">Salário por Dia</label>
+        <input type="text" id="data-dia" class="form-control">
+      </div>
+    </div>
+    <div class="col-sm-12 col-md-6">
+      <div class="form-group">
+        <label for="data-hora">Data por Hora</label>
+        <input type="text" id="data-hora" class="form-control">
+      </div>
+    </div>
+  </div>
+
+  <!-- QUARTA LINHA -->
+  <div class="form-row">
+    <div class="col-sm 12 col-md-6">
+
+    </div>
+  </div>
+  <!-- QUINTA LINHA -->
+  <div class="form-row">
+    <div class="col-sm-12 col-md-6">
+      <label for="transporte">Transporte</label>
+      <ng-select [items]="people$ | async" [multiple]="true" [closeOnSelect]="false" [searchable]="true" bindLabel="id"
+        placeholder="Pesquisar">
+      </ng-select>
+    </div>
+    <div class="col-sm-12 col-md-6">
+      <label for="valor-ida-volta">Valor Ida e Volta</label>
+      <input type="text" class="form-control" id="valor-ida-volta">
+    </div>
+  </div>
+
+  <div class="form-row" style="margin-top: 1%">
+    <div class="col-12">
+      <button class="btn btn-success float-right">
+        Salvar
+      </button>
+    </div>
+  </div>
+
+</form>

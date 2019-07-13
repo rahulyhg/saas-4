@@ -20,6 +20,7 @@ import { NgxDatatableModule } from '@swimlane/ngx-datatable';
 import { FilterPipe } from '../../pipes/filter.pipe';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
+import { NgSelectModule } from '@ng-select/ng-select';
 @NgModule({
   declarations: [ColaboradorListComponent, ColaboradorFormComponent, DadosPessoaisComponent, ContratoComponent, FilterPipe],
   imports: [
@@ -35,6 +36,7 @@ import { MatIconModule } from '@angular/material/icon';
     NgxDatatableModule,
     MatButtonModule,
     MatIconModule,
+    NgSelectModule
   ], providers: [
     ViacepService,
     IbgeService,
