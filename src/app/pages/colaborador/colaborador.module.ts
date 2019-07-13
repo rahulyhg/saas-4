@@ -3,7 +3,6 @@ import { CommonModule } from '@angular/common';
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 
 import { TabsModule } from 'ngx-bootstrap/tabs';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { BsDatepickerModule } from 'ngx-bootstrap/datepicker';
 
 import { NgBrazil } from 'ng-brazil'
@@ -17,8 +16,12 @@ import { ContratoComponent } from './shared/components/contrato/contrato.compone
 import { ViacepService } from './shared/services/viacep.service';
 import { IbgeService } from './shared/services/ibge.service';
 import { MatCardModule } from '@angular/material/card';
+import { NgxDatatableModule } from '@swimlane/ngx-datatable';
+import { FilterPipe } from '../../pipes/filter.pipe';
+import { MatButtonModule } from '@angular/material/button';
+import { MatIconModule } from '@angular/material/icon';
 @NgModule({
-  declarations: [ColaboradorListComponent, ColaboradorFormComponent, DadosPessoaisComponent, ContratoComponent],
+  declarations: [ColaboradorListComponent, ColaboradorFormComponent, DadosPessoaisComponent, ContratoComponent, FilterPipe],
   imports: [
     CommonModule,
     ColaboradorRoutingModule,
@@ -27,11 +30,15 @@ import { MatCardModule } from '@angular/material/card';
     TabsModule.forRoot(),
     BsDatepickerModule.forRoot(),
     TextMaskModule,
+    NgBrazil,
     MatCardModule,
-    NgBrazil
+    NgxDatatableModule,
+    MatButtonModule,
+    MatIconModule,
   ], providers: [
     ViacepService,
-    IbgeService
+    IbgeService,
+    FilterPipe
   ]
 })
 export class ColaboradorModule { }

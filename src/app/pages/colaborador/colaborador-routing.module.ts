@@ -7,7 +7,8 @@ const routes: Routes = [
   { path: '', component: ColaboradorListComponent },
   { path: 'novo', component: ColaboradorFormComponent },
   { path: ':id/editar', component: ColaboradorFormComponent },
-  { path: ':id/view', component: ColaboradorFormComponent }
+  { path: ':id/view', component: ColaboradorFormComponent },
+  { path: '**', component: ColaboradorListComponent }
 ];
 
 @NgModule({
