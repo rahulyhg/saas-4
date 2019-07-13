@@ -1,8 +1,13 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import { LayoutComponent } from './layout/layout/layout.component';
 
 const routes: Routes = [
-  { path: 'colaborador', loadChildren: './pages/colaborador/colaborador.module#ColaboradorModule' }
+  {
+    path: '', component: LayoutComponent, children: [
+      { path: 'colaborador', loadChildren: './pages/colaborador/colaborador.module#ColaboradorModule' }
+    ]
+  },
 ];
 
 @NgModule({
