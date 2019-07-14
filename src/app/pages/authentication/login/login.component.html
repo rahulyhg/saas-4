@@ -1,0 +1,50 @@
+<div class="form-row" style="height: 100%; max-width: 100%;">
+  <div class="col-md-7 coluna-esquerda" style="border: 1px solid blue;">
+    <h1 class="titulo">
+      EVENT+
+    </h1>
+    <h5>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam eveniet molestiae suscipit
+    </h5>
+  </div>
+  <div class="col-md-5 coluna-direita" style="border: 1px solid red">
+    <div class="container-custom">
+      <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+        <!-- PRIMEIRA LINHA -->
+        <div class="form-row">
+          <div class="col-md-12 centro">
+            <img src="https://www.bitcoincash.org/media-kit/3-bitcoin-cash-logo-ot-medium.png" alt="" class="mb-2"
+              style="max-height: 150; max-width: 150px;">
+          </div>
+        </div>
+        <!-- SEGUNDA LINHA -->
+        <div class="form-row">
+          <div class="col-md-12">
+            <label for="email">E-mail</label>
+            <input type="text" class="form-control" formControlName="email">
+          </div>
+        </div>
+        <!-- TERCEIRA LINHA -->
+        <div class="form-row">
+          <div class="col-md-12">
+            <label for="password">Password</label>
+            <input type="text" class="form-control" formControlName="password">
+          </div>
+        </div>
+        <!-- QUARTA LINHA -->
+        <div class="form-row">
+          <div class="col-md-12 centro" style="margin-top: 3%">
+            <button class="btn btn-primary">
+              ENTRAR
+            </button>
+          </div>
+        </div>
+      </form>
+
+      <pre>
+    {{loginForm.value | json}}
+    </pre>
+
+    </div>
+  </div>
+</div>
