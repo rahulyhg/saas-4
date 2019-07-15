@@ -1,6 +1,8 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { DatatableComponent } from '@swimlane/ngx-datatable';
 import { FilterPipe } from '../../../pipes/filter.pipe';
+import { ColaboradorService } from '../shared/services/colaborador.service';
+import { ColaboradorDashboardService } from '../shared/services/colaboradorDashboard.service';
 
 @Component({
   selector: 'app-colaborador-list',
@@ -15,17 +17,25 @@ export class ColaboradorListComponent implements OnInit {
 
   temp = [];
 
-  columns = [{ prop: 'id', name: '#' }, { prop: 'name' }, { prop: 'email' }];
   @ViewChild(DatatableComponent, {}) table: DatatableComponent;
 
-  constructor(public pipe: FilterPipe) {
-    this.fetch(data => {
-      // cache our list
-      this.temp = [...data];
+  constructor(public pipe: FilterPipe, private dashBoardService: ColaboradorDashboardService) {
+    this.getAll();
 
-      // push our inital complete list
-      this.rows = data;
-    });
+    // this.fetch(data => {
+    //   // cache our list
+    //   this.temp = [...data];
+
+    //   // push our inital complete list
+    //   this.rows = data;
+    // });
+  }
+
+  getAll() {
+    this.dashBoardService.getAll().subscribe(res => {
+      this.temp = [...res]
+      this.rows = res;
+    })
   }
 
   fetch(cb) {

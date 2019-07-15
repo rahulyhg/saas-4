@@ -21,6 +21,8 @@ import { FilterPipe } from '../../pipes/filter.pipe';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { NgSelectModule } from '@ng-select/ng-select';
+import { ColaboradorService } from './shared/services/colaborador.service';
+import { ColaboradorDashboardService } from './shared/services/colaboradorDashboard.service';
 @NgModule({
   declarations: [ColaboradorListComponent, ColaboradorFormComponent, DadosPessoaisComponent, ContratoComponent, FilterPipe],
   imports: [
@@ -40,7 +42,9 @@ import { NgSelectModule } from '@ng-select/ng-select';
   ], providers: [
     ViacepService,
     IbgeService,
-    FilterPipe
+    FilterPipe,
+    ColaboradorDashboardService,
+    ColaboradorService,
   ]
 })
 export class ColaboradorModule { }

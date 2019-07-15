@@ -6,7 +6,7 @@ import { AuthGuard } from 'src/app/core/auth/_guards/auth.guard';
 
 const routes: Routes = [
   {
-    path: '', canActivate: [AuthGuard], children: [
+    path: '', children: [
       { path: '', component: ColaboradorListComponent },
       { path: 'novo', component: ColaboradorFormComponent, },
       { path: ':id/editar', component: ColaboradorFormComponent },

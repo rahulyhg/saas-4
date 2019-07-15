@@ -18,4 +18,16 @@ export class AddressAdapter implements Adapter<Address>{
         )
     }
 
+    adaptFromBack(item: any): Address {
+        return new Address(
+            item.zipCode,
+            item.street,
+            item.number,
+            item.complement,
+            item.district,
+            item.city,
+            item.stateCode
+        )
+    }
+
 }

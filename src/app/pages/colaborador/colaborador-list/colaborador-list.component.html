@@ -1,14 +1,15 @@
 <input type="text" style="padding:8px;margin:15px auto;width:30%;" placeholder="Pesquisar"
     (keyup)="updateFilter($event)" />
-<ngx-datatable #table class="material" [columns]="columns" [columnMode]="'force'" [headerHeight]="50"
-    [footerHeight]="50" [rowHeight]="'auto'" [limit]="10" [rows]="rows">
-    <ngx-datatable-column name="ID"></ngx-datatable-column>
-    <ngx-datatable-column name="NAME"></ngx-datatable-column>
-    <ngx-datatable-column name="EMAIL"></ngx-datatable-column>
-    <ngx-datatable-column name="ACTIONS" sortable="false" prop="id">
+<ngx-datatable #table class="material" [columnMode]="'force'" [headerHeight]="50" [footerHeight]="50"
+    [rowHeight]="'auto'" [limit]="10" [rows]="rows">
+    <ngx-datatable-column name="#" prop="register"></ngx-datatable-column>
+    <ngx-datatable-column name="Nome" prop="name"></ngx-datatable-column>
+    <ngx-datatable-column name="Funcão" prop="function"></ngx-datatable-column>
+    <ngx-datatable-column name="Telefone" prop="cellPhone"></ngx-datatable-column>
+    <ngx-datatable-column name="Ações" sortable="false" prop="id">
         <ng-template let-row="row" let-value="value" ngx-datatable-cell-template>
-            <button mat-icon-button color="primary" aria-label="Example icon-button with a heart icon"
-                [routerLink]="['/colaborador',value,'editar']">
+            <button mat-icon-button color="primary" style="margin-top:0"
+                aria-label="Example icon-button with a heart icon" [routerLink]="['/colaborador',value,'editar']">
                 <mat-icon>visibility</mat-icon>
             </button>
             <button mat-icon-button color="primary" aria-label="Example icon-button with a heart icon"

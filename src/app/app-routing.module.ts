@@ -6,7 +6,7 @@ import { AuthGuard } from './core/auth/_guards/auth.guard';
 const routes: Routes = [
   {
     path: '', component: LayoutComponent, children: [
-      { path: 'colaborador', loadChildren: './pages/colaborador/colaborador.module#ColaboradorModule', canActivate: [AuthGuard] }
+      { path: 'colaborador', loadChildren: './pages/colaborador/colaborador.module#ColaboradorModule' }
     ]
   },
   {
