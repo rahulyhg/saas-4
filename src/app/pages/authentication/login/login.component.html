@@ -9,7 +9,7 @@
   </div>
   <div class="col-md-5 coluna-direita" style="border: 1px solid red">
     <div class="container-custom">
-      <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+      <form [formGroup]="loginForm">
         <!-- PRIMEIRA LINHA -->
         <div class="form-row">
           <div class="col-md-12 centro">
@@ -33,9 +33,19 @@
         </div>
         <!-- QUARTA LINHA -->
         <div class="form-row">
-          <div class="col-md-12 centro" style="margin-top: 3%">
+          <!-- <div class="col-md-12 centro" style="margin-top: 3%">
             <button class="btn btn-primary">
               ENTRAR
+            </button>
+          </div> -->
+
+          <div class="col-md-12 centro" style="margin-top: 3%">
+            <div *ngIf="authFirebase.user$ | async as user;">
+              {{user | json}}
+            </div>
+            <hr>
+            <button class="btn btn-primary" (click)="authFirebase.googleSignin()">
+              GOOGLE
             </button>
           </div>
         </div>

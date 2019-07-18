@@ -7,3 +7,9 @@ export class User {
     token?: string;
     tenantId: string;
 }
+
+export class FireBaseUser {
+    uid: string;
+    email: string;
+    displayName: string;
+}

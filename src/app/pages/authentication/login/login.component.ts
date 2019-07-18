@@ -3,6 +3,7 @@ import { FormControl, FormGroup, FormBuilder, Validators } from '@angular/forms'
 import { AuthenticationService } from 'src/app/core/auth/_services/authentication.service';
 import { first } from 'rxjs/operators';
 import { Router, ActivatedRoute } from '@angular/router';
+import { FirebaseAuthenticationService } from 'src/app/core/auth/_services/firebaseAuthentication.service';
 
 @Component({
   selector: 'app-login',
@@ -15,7 +16,8 @@ export class LoginComponent implements OnInit {
     private fb: FormBuilder,
     private router: Router,
     private route: ActivatedRoute,
-    private authService: AuthenticationService) { }
+    private authService: AuthenticationService,
+    public authFirebase: FirebaseAuthenticationService) { }
 
   loginForm: FormGroup
 

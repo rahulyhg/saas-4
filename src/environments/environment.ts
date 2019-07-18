@@ -5,7 +5,16 @@
 export const environment = {
   production: false,
   apiBaseUrl: 'http://localhost:65535',
-  userKey: 'user'
+  userKey: 'user',
+  firebase: {
+    apiKey: "AIzaSyCU26kx3QIKGmqdoJqaLLSQwcjC2RwWQCA",
+    authDomain: "eveplus-f9457.firebaseapp.com",
+    databaseURL: "https://eveplus-f9457.firebaseio.com",
+    projectId: "eveplus-f9457",
+    storageBucket: "",
+    messagingSenderId: "971425804568",
+    appId: "1:971425804568:web:935292325fc77cee"
+  }
 };
 
 /*
